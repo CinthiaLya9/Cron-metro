@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif ;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;  /*Afasta os elementos*/
+    padding-top: 3rem;
+    background-color: #f1f1f1;
+    height: 100vh; /*100% da tela*/
+    background-color: #fad6ecee;
+}
+
+.container h1 { /*Nome = Cronômetro*/
+    color: #ff0a91;
+    font-size: 40px;
+}
+
+.timer  {
+    display: flex; /*Um ao lado do outro*/
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    min-width: 90px; /*Largura fixa para os números*/
+}
+
+.separator { /*Dois pontos*/
+    padding: 0 10px;
+    color: #525763;
+}
+
+#milliseconds {
+    font-size: 30px;
+    color: #525763;
+}
+
+.buttons { /*Botões*/
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid#d4aec2;
+    transition: all 0.2s ease-in-out; /*Animacao suave na entrada e na saída*/
+}
+
+.btn:hover {
+    transform: scale(1.2); /*Aumenta o botão quando o mouse fica em cima*/
+}
+
+#startbtn {
+    background-color: #ff008c;
+    color: rgb(255, 255, 255);
+}
+
+#pausebtn {
+    background-color: hsl(313, 100%, 50%);
+    color: rgb(255, 255, 255);
+}
+
+#resumebtn {
+    background-color: #ff008c;
+    color: rgb(255, 255, 255);
+}
+
+
+#resetbtn {
+    background-color: hsl(313, 100%, 50%);
+    color: #f1f1f1;
+}
+
+#pausebtn, #resumebtn {
+    display: none;
+}
